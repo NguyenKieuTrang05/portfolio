@@ -145,9 +145,8 @@ a:hover {
 }
 
 /*SECTIONS*/
-section  {
+section {
     padding-top: 4vh;
-    min-height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -202,9 +201,9 @@ section  {
     text-align: center;
 }
 
-#socials-container {
+.socials {
     display: flex;
-    justify-content: c;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -296,7 +295,6 @@ section  {
     position: absolute;
     right: -6rem;
     bottom: 2.5rem;
-
 }
 
 .text-container {
@@ -366,7 +364,7 @@ section  {
     border-color: rgb(163, 163, 163);
 }
 
-/*PROJECTS SECTION*/
+/* PROJECTS SECTION */
 
 #projects {
     position: relative;
@@ -376,31 +374,31 @@ section  {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  
 }
-  
+
 #projects .about-containers {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: nowrap;   /* WICHTIG → kein Umbruch */
+    flex-wrap: nowrap;
 }
-  
+
 #projects .details-container {
-    flex: 0 0 30%;       /* exakt 3 nebeneinander */
+    flex: 0 0 30%;
     max-width: 30%;
     text-align: center;
     padding: 1.5rem;
 }
-  
+
 #projects .project-img {
     width: 95%;
     height: 200px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
-    border-radius: rem;
+    border-radius: 1rem;
 }
+
 /*CERTIFICATE*/
 #certificate {
     position: relative;

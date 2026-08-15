@@ -1,10 +1,112 @@
-/*wenn screen-size kleiner als 1200px ist -> desktop-nav verschwindet*/
+/* TABLET / KLEINERE DESKTOPS */
 @media screen and (max-width: 1200px) {
+
     #desktop-nav {
         display: none;
     }
+
     #hamburger-nav {
         display: flex;
     }
-    
+
+    section {
+        margin: 0 2rem;
+    }
+
+    .about-containers,
+    .experience-details-container,
+    .about-details-container {
+        flex-direction: column;
+    }
+
+    #projects .about-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects .details-container {
+        flex: 1 1 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .certificate-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate-card {
+        width: 100%;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+
+    .title {
+        font-size: 2.3rem;
+    }
+}
+
+
+/* HANDY */
+@media screen and (max-width: 768px) {
+
+    section {
+        margin: 0 1rem;
+        padding-top: 2rem;
+    }
+
+    #profile {
+        height: auto;
+        min-height: 80vh;
+        padding-top: 3rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1.1rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .details-container,
+    .text-container,
+    .certificate-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #projects .project-img {
+        height: auto;
+    }
+
+    .experience-sub-title {
+        font-size: 1.4rem;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .contact-info-upper-container {
+        flex-direction: column;
+    }
+
+    .contact-info-container p {
+        font-size: 1rem;
+    }
+
+    .icon {
+        height: 1.8rem;
+    }
 }
