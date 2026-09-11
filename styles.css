@@ -428,6 +428,36 @@ section {
     margin: 0.4rem 0;
 }
 
+.project-status {
+    width: fit-content;
+    max-width: 85%;
+    margin: 1rem auto;
+    padding: 0.7rem 1.2rem;
+
+    border: 1px solid black;
+    border-radius: 12px;
+
+    color: #555;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.project-status strong,
+.project-status span {
+    display: block;
+}
+
+.project-status strong {
+    margin-bottom: 0.2rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.project-status span {
+    color: #666;
+}
+
 /*CONTACT*/
 
 #contact {
