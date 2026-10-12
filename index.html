@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,23 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">Kieu Trang Nguyen</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#experience">Erfahrung</a></li>
+                <li><a href="#profile">Über mich</a></li>
+                <li><a href="#education">Bildung</a></li>
                 <li><a href="#projects">Projekte</a></li>
+                <li><a href="#skills">Skills & Sprachen</a></li>
+                <li><a href="#experience">Erfahrung</a></li>
                 <li><a href="#certificate">Zertifikate</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
     </nav>
+
     <nav id="hamburger-nav">
         <div class="logo">Kieu Trang Nguyen</div>
         <div class="hamburger-menu">
@@ -29,278 +34,484 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">Über mich</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Erfahrung</a></li>
+                <li><a href="#profile" onclick="toggleMenu()">Über mich</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Bildung</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Erfahrung</a></li>
+                <li><a href="#certificate" onclick="toggleMenu()">Zertifikate</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
             </div>
         </div>
     </nav>
+
     <section id="profile">
-        <div class="section__text"> 
-            <p class="section__text__p1">Hallo, meine Name ist </p>
-            <h1 class="title">Kieu Trang Nguyen</h1>
-            <p class="section__text__p2">Wirtschaftsinformatik Studentin</p>
-            <p class="section__text__p3">HTW Berlin</p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2" 
-                onclick="window.open('./assets/Lebenslauf_Kieu_Trang_Nguyen_wb.pdf')">
-                Lebenslauf downloaden
-                </button>
-                <button
-                class="btn btn-color-1"
-                onclick="location.href='#contact'">
-                Kontakt-
-                informationen
-                </button>
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, ich bin Kieu 👋</p>
+            <h1 class="hero-title">
+                Wirtschaftsinformatik-<br>Studentin
+            </h1>
+            <p class="hero-subtitle">
+                Business & IT | HTW Berlin
+            </p>
+            <p class="hero-description">
+                Ich studiere Wirtschaftsinformatik an der HTW Berlin
+                und interessiere mich für die Verbindung von Technologie
+                und Wirtschaft. In Hochschulprojekten und eigenen
+                Anwendungen sammle ich praktische Erfahrungen in der
+                Softwareentwicklung und der Gestaltung digitaler Lösungen.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="hero-btn primary">
+                    Projekte ansehen
+                </a>
+                <a href="./assets/Lebenslauf_Kieu_Trang_Nguyen.pdf"
+                    class="hero-btn secondary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Lebenslauf herunterladen
+                </a>
             </div>
-            <div class="socials container">
-                <img src="./assets/github.png" alt="Mein GitHub Profil"
-                class="icon" 
-                onclick="location.href='https://github.com/NguyenKieuTrang05' ">
-                <img src="./assets/linkedin-2.png" alt=Mein GitHub Profil"
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/kieu-trang-nguyen2005/' ">
+            <div class="hero-socials">
+                <a href="https://github.com/NguyenKieuTrang05"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub 
+                </a>
+                <a href="https://www.linkedin.com/in/kieu-trang-nguyen2005/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn 
+                </a>
             </div>
         </div>
+        <div class="hero-image">
+            <img src="./assets/profildbild.PNG"
+                alt="Porträt von Kieu Trang Nguyen">
+        </div>
     </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-containers">
-                    <img 
-                    src="./assets/Education Icon.jpg" 
-                    alt="Bildung icon"
-                    class="icon"
-                    />
-                    <h3>Bildung</h3>
-                    <div class="education-container">
-                        <h4>HTW Berlin</h4>
-                        <p>B.Sc Wirtschaftsinformatik <br> seit SoSe 2025 - 2. Fachsemester</p>
-                    </div>
-                    <div class="education-container">
-                        <h4>TU Berlin</h4>
-                        <p>Wirtschaftsinformatik <br> 10/2024 - 03/2025</p>
-                    </div>
-                    <div class="education-container">
-                        <h4>Max-Delbrück-Gymnasium</h4>
-                        <p>Abitur<br> 9/2017 - 07/2023</p>
-                    </div>
-                </div>
+
+    <!-- AKADEMISCHER WERDEGANG -->
+    <section id="education">
+        <p class="section__text__p1">Mein Bildungsweg</p>
+        <h1 class="title">Akademischer Werdegang</h1>
+        <div class="education-timeline">
+            <div class="education-item">
+                <span class="education-date">04/2025 – heute</span>
+                <h3>HTW Berlin</h3>
+                <p class="education-degree">
+                    Bachelor of Science · Wirtschaftsinformatik
+                </p>
+                <p>Aktuelles Studium</p>
             </div>
-            <div class="text-container"> 
-                <p>
-                    Engagierte Wirtschaftsinformatik-Studentin an der HTW Berlin mit Interesse an IT und digitalen Geschäftsprozessen. 
-                    Durch meine mehrjährige Berufserfahrung in der Gastronomie bringe ich ausgeprägte  Kommunikations- und Organisationsfähigkeiten sowie eine strukturierte Arbeitsweise mit. 
-                    Ich suche eine Werkstudentenstelle, in der ich mein im Studium erworbenes Wissen in der Praxis einsetzen und weiterentwickeln kann.
+            <div class="education-item">
+                <span class="education-date">10/2024 – 03/2025</span>
+                <h3>Technische Universität Berlin</h3>
+                <p class="education-degree">
+                    Bachelorstudium · Wirtschaftsinformatik
                 </p>
             </div>
-          </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Pfeil icon" class="icon arrow"
-        onclick="location.href ='./#experience'">
-    </section>
-    <section id="experience">
-        <h1 class="title">Meine Erfahrungen & Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Berufserfahrung</h2>
-                    <div class="experience-list">
-                        <div class="job">
-                            <h3>Servicekraft mit administrativen Aufgaben - Gastronomie</h3>
-                            <p class="job-date">Thanh Binh | 01/2024 - laufend</p>
-                            <ul>
-                                <li>Betreuung und Beratung der Gäste sowie Unterstützung im Service </li>
-                                <li>Verwaltung administrativer Aufgaben inkl. Kassenbuchführung, Rechnungsstellung und Bearbeitung geschäftlicher Korrespondenz</li>
-                                <li>Organisation von Bestellungen und Koordination operativer Abläufe </li>
-                                <li>Eigenverantwortliches Arbeiten unter Zeitdruck und enge Zusammenarbeit im Team</li>
-                            </ul>
-                        </div>
-                        <div class="job">
-                            <h3>Servicekraft - Café</h3>
-                            <p class="job-date">Puffle Bees | 08/2023 - 03/2024</p>
-                            <ul>
-                                <li>Betreuung von Kunden sowie Aufnahme von Bestellungen</li>
-                                <li>Zubereitung und Servieren von Speisen und Getränken im laufenden Betrieb</li>
-                                <li>Zusammenarbeit im Team im täglichen Betrieb</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Fachliche Kompetenzen</h2>
-                    <ul>
-                        <li><strong>IT- Kenntnisse:</strong> Java, SQL, R, HTML/CSS und JavaScript (Grundlagen) </li>
-                        <li><strong>Prozessmodellierung:</strong> BPMN, Camunda (Modellierung und Automatisierung einfacher Workflows)</li>
-                        <li><strong>Tools:</strong>  Excel (Grundkenntnisse), Word & PowerPoint, Moqups</li>
-                        <li><strong>Sprachen:</strong> Deutsch (Muttersprache), Vietnamesisch (Muttersprache, mündlich), Englisch (fließend), Französisch (B2)</li>
-                      </ul>
-                </div>
+            <div class="education-item">
+                <span class="education-date">09/2017 – 07/2023</span>
+                <h3>Max-Delbrück-Gymnasium</h3>
+                <p class="education-degree">
+                    Allgemeine Hochschulreife (Abitur)
+                </p>
             </div>
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Pfeil icon" 
-        class="icon arrow"
-        onclick="location.href ='./#projects'">
     </section>
-    <section id="projects">
-        <h1 class="title">Meine Projekte</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-        
-                <!-- Robot Rescue -->
-                <div class="details-container color-container">
-                    <div class="job">
-                        <img src="./assets/RobotGame.png" 
-                             alt="Robot Rescue"
-                             class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Robot Rescue (Java)</h2>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/NguyenKieuTrang05/robot-rescue-java', '_blank')">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-        
-                <!-- VietBox -->
-                <div class="details-container color-container">
-                    <div class="job">
-                        <img src="./assets/vietbox_pic.png"
-                             alt="VietBox Website"
-                             class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">VietBox Website</h2>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://vietboxco.com', '_blank')">
-                            Live Demo
-                        </button>
-        
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/NguyenKieuTrang05/vietbox-business-website', '_blank')">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-        
-                <!-- MyShoppingList -->
-                <div class="details-container color-container">
-                    <div class="job">
-                        <img src="./assets/MyShoppingList_pic.png"
-                             alt="MyShoppingList"
-                             class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">MyShoppingList (Spring Boot + Vue)</h2>
 
-                    <div class="project-status">
-                        <strong>Universitätsprojekt</strong>
-                        <span>Frontend-Demo verfügbar</span>
-                        <span>Datenbank derzeit nicht aktiv</span>
+    <!-- IT-PROJEKTE -->
+    <section id="projects">
+        <p class="section__text__p1">Ein Einblick in meine Arbeit</p>
+        <h1 class="title">IT-Projekte</h1>
+        <div class="projects-wrapper">
+
+            <!-- PROJEKT 1: MYSHOPPINGLIST -->
+            <article class="project-row">
+                <div class="project-image">
+                    <img
+                        src="./assets/Myshoppinglist_demo.png"
+                        alt="Screenshot der MyShoppingList-Webanwendung"
+                        loading="lazy">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">
+                        Hochschulprojekt · Full-Stack-Entwicklung
+                    </span>
+                    <h2>MyShoppingList</h2>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Vue.js</span>
+                        <span>PostgreSQL</span>
                     </div>
-                    
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://myshoppinglist-frontend.onrender.com', '_blank')">
-                            Live Demo
-                        </button>
-        
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/NguyenKieuTrang05/myshoppinglist-frontend', '_blank')">
+                    <p class="project-description">
+                        Im Rahmen eines Hochschulprojekts entstand im Team
+                        eine Full-Stack-Webanwendung zur Verwaltung von
+                        Einkaufslisten. Die Anwendung verbindet ein
+                        Vue.js-Frontend mit einem Spring-Boot-Backend
+                        und einer PostgreSQL-Datenbank.
+                        Zu den Funktionen gehören die Registrierung
+                        und Anmeldung, das Erstellen und Bearbeiten
+                        von Einkaufslisten sowie die Verwaltung von
+                        Produkten, das Favorisieren und einen Überlick
+                        über den Einkaufsstatus.
+                    </p>
+                    <p class="project-note">
+                        Hinweis: Die Datenbank der gehosteten Demo ist
+                        derzeit nicht aktiv. Der Quellcode ist auf GitHub
+                        verfügbar.
+                    </p>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/NguyenKieuTrang05/myshoppinglist-frontend"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link primary">
                             Frontend
-                        </button>
-        
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/NguyenKieuTrang05/myshoppinglist-backend', '_blank')">
+                        </a>
+                        <a
+                            href="https://github.com/NguyenKieuTrang05/myshoppinglist-backend"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link secondary">
                             Backend
-                        </button>
+                        </a>
                     </div>
                 </div>
-        
-            </div>
+            </article>
+
+            <!-- PROJEKT 2: VIETBOX -->
+            <article class="project-row reverse">
+                <div class="project-image">
+                    <img
+                        src="./assets/vietbox_pic.png"
+                        alt="Screenshot der VietBox-Website"
+                        loading="lazy">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">
+                        Praxisprojekt · Webentwicklung
+                    </span>
+                    <h2>VietBox</h2>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <p class="project-description">
+                        Entwicklung einer Website für ein Unternehmen
+                        im Rahmen einer privaten Anfrage.
+                        Der Fokus lag auf einer übersichtlichen
+                        Präsentation des Unternehmens und
+                        einer intuitiven Benutzeroberfläche.
+                    </p>
+                    <div class="project-links">
+                        <a
+                            href="https://vietboxco.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link primary">
+                            Website ansehen
+                        </a>
+                        <a
+                            href="https://github.com/NguyenKieuTrang05/vietbox-business-website"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link secondary">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJEKT 3: ROBOT RESCUE -->
+            <article class="project-row">
+                <div class="project-image">
+                    <img
+                        src="./assets/RobotGame.png"
+                        alt="Screenshot des Java-Projekts Robot Rescue"
+                        loading="lazy">
+                </div>
+                <div class="project-content">
+                    <span class="project-category">
+                        Hochschulprojekt · Java
+                    </span>
+                    <h2>Robot Rescue</h2>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Objektorientierte Programmierung</span>
+                    </div>
+                    <p class="project-description">
+                        Entwicklung einer Java-Anwendung im Rahmen
+                        eines Hochschulprojekts.
+                        Im Mittelpunkt standen die Anwendung
+                        objektorientierter Programmierkonzepte
+                        und die strukturierte Umsetzung
+                        der Programmlogik.
+                    </p>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/NguyenKieuTrang05/robot-rescue-java"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link primary">
+                            GitHub ansehen
+                        </a>
+                    </div>
+                </div>
+            </article>
+
         </div>
-        </div>
-        <img src="./assets/arrow.png" 
-        alt="Pfeil icon" 
-        class="icon arrow"
-        onclick="location.href ='./#certificate'">
     </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <p class="section__text__p1">Meine Kompetenzen</p>
+        <h1 class="title">IT-Skills & Kenntnisse</h1>
+
+        <div class="skills-wrapper">
+
+            <!-- PROGRAMMIERUNG -->
+            <div class="skill-category">
+                <h2>Programmierung & Entwicklung</h2>
+                <div class="skill-tags">
+                    <span>Java</span>
+                    <span>SQL</span>
+                    <span>R</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript (Grundlagen)</span>
+                    <span>Python (Grundlagen)</span>
+                </div>
+            </div>
+
+            <!-- WEB & BACKEND -->
+            <div class="skill-category">
+                <h2>Web & Backend</h2>
+                <div class="skill-tags">
+                    <span>Spring Boot</span>
+                    <span>Node.js</span>
+                    <span>Vue.js</span>
+                    <span>PostgreSQL</span>
+                    <span>Oracle</span>
+                </div>
+            </div>
+
+            <!-- PROZESSMODELLIERUNG -->
+            <div class="skill-category">
+                <h2>Prozessmodellierung</h2>
+                <div class="skill-tags">
+                    <span>BPMN</span>
+                    <span>Camunda</span>
+                    <span>SAP Signavio (Im Rahmen von Fallstudien)</span>
+                </div>
+            </div>
+
+            <!-- FACHKENNTNISSE -->
+            <div class="skill-category">
+                <h2>Fachkenntnisse</h2>
+                <div class="skill-tags">
+                    <span>Softwareentwicklung</span>
+                    <span>Projektmanagement</span>
+                    <span>Rechnungswesen</span>
+                    <span>Buchführung & Controlling</span>
+                </div>
+            </div>
+
+            <!-- TOOLS -->
+            <div class="skill-category">
+                <h2>Tools</h2>
+                <div class="skill-tags">
+                    <span>Git & GitHub</span>
+                    <span>VS Code</span>
+                    <span>IntelliJ IDEA</span>
+                    <span>Camunda Modeler</span>
+                    <span>Moqups</span>
+                    <span>MS Office</span>
+                </div>
+            </div>
+
+            <!-- SPRACHEN -->
+            <div class="skill-category">
+                <h2>Sprachen</h2>
+                <div class="language-list">
+                    <p><strong>Deutsch</strong> – Muttersprache</p>
+                    <p><strong>Vietnamesisch</strong> – Muttersprache (mündlich)</p>
+                    <p><strong>Englisch</strong> – Fließend</p>
+                    <p><strong>Französisch</strong> – B2</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BERUFSERFAHRUNG -->
+    <section id="experience">
+        <p class="section__text__p1">Mein beruflicher Hintergrund</p>
+        <h1 class="title">Berufserfahrung</h1>
+
+        <div class="career-timeline">
+
+            <!-- THANH BINH: AKTUELL -->
+            <article class="career-item">
+                <span class="career-date">09/2025 – heute</span>
+                <h2>Servicekraft mit administrativen Aufgaben</h2>
+                <h3>Thanh Binh · Gastronomie</h3>
+                <ul>
+                    <li>
+                        Kundenservice, Bestellungsaufnahme und
+                        Zubereitung von Getränken
+                    </li>
+                    <li>
+                        Durchführung von Tagesabrechnungen
+                    </li>
+                </ul>
+            </article>
+
+            <!-- THANH BINH: SELBSTSTÄNDIGKEIT -->
+            <article class="career-item">
+                <span class="career-date">01/2024 – 08/2025</span>
+                <h2>Selbstständige Tätigkeit / Inhaberin</h2>
+                <h3>Thanh Binh · Gastronomie</h3>
+                <ul>
+                    <li>
+                        Verantwortung für administrative und
+                        organisatorische Aufgaben des Betriebs
+                    </li>
+                    <li>
+                        Führung des Kassenbuchs, betriebliche
+                        Abrechnungen sowie Überwachung von
+                        Einnahmen und Ausgaben
+                    </li>
+                    <li>
+                        Verwaltung betrieblicher Unterlagen
+                        sowie Erstellung von Hygiene- und Arbeitsplänen
+                    </li>
+                    <li>
+                        Bearbeitung geschäftlicher Korrespondenz
+                        sowie Abwicklung von Lohnzahlungen
+                        und Mitarbeiterunterlagen
+                    </li>
+                </ul>
+            </article>
+
+            <!-- PUFFLE BEES -->
+            <article class="career-item">
+                <span class="career-date">08/2023 – 03/2024</span>
+                <h2>Servicekraft – Café</h2>
+                <h3>Puffle Bees</h3>
+                <ul>
+                    <li>
+                        Kundenservice, Bestellungsaufnahme und
+                        Zubereitung von Speisen und Getränken
+                    </li>
+                    <li>
+                        Zusammenarbeit im Team während
+                        des laufenden Betriebs
+                    </li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ZERTIFIKATE -->
     <section id="certificate">
+        <p class="section__text__p1">Zusätzliche Qualifikationen</p>
         <h1 class="title">Zertifikate</h1>
-        <div class="certificate-container">
-            <div class="certificate-card">
-                <h2>Introduction to R</h2>
-                <p>DataCamp</p>
-                <p>April 2026 · 4 Stunden</p>
-                <button 
-                    class="btn btn-color-2"
-                    onclick="window.open('./assets/certificate_IntroductionR.pdf')">
-                    Zertifikat ansehen
-                </button>
-            </div>
-            <div class="certificate-card">
+
+        <div class="certificates-grid">
+
+            <!-- EXCEL -->
+            <article class="certificate-item">
+                <span class="certificate-provider">DataCamp</span>
                 <h2>Introduction to Excel</h2>
-                <p>DataCamp</p>
-                <p>August 2026 · 4 Stunden</p>
-                <button 
-                    class="btn btn-color-2"
-                    onclick="window.open('./assets/certificate_excel.pdf')">
-                    Zertifikat ansehen
-                </button>
-            </div>
+                <p class="certificate-info">
+                    August 2026 · 4 Stunden
+                </p>
+                <a
+                    href="./assets/zertifikat_Excel.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="certificate-link">
+                    Zertifikat ansehen 
+                </a>
+            </article>
+
+            <!-- R -->
+            <article class="certificate-item">
+                <span class="certificate-provider">DataCamp</span>
+                <h2>Introduction to R</h2>
+                <p class="certificate-info">
+                    April 2026 · 4 Stunden
+                </p>
+                <a
+                    href="./assets/zertifikat_R.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="certificate-link">
+                    Zertifikat ansehen 
+                </a>
+            </article>
+
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Pfeil icon" 
-        class="icon arrow"
-        onclick="location.href ='./#contact'">
     </section>
+
+    <!-- KONTAKT -->
     <section id="contact">
-        <p class="section__text__p1">Bei Interesse</p>
-        <h1 class="title">Kontaktieren Sie mich unter</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img 
-                src="./assets/email.png" 
-                alt="Email icon"
-                class="icon contact-icoon email-icon"
-                >
-                <p><a href="mailto:kkieutrangngy@gmail.com">kkieutrangngy@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img 
-                src="./assets/linkedin-2.png" 
-                alt="LinkedIn icon"
-                class="icon contact-info-container"
-                >
-                <p><a href="https://www.linkedin.com/in/kieu-trang-nguyen2005/">LinkedIn</a></p>
-            </div>
+        <p class="section__text__p1">Kontakt</p>
+        <h1 class="title">Lassen Sie uns vernetzen!</h1>
+
+        <p class="contact-description">
+            Ich freue mich über Möglichkeiten, meine Kenntnisse
+            im Rahmen einer Werkstudententätigkeit oder eines
+            Praktikums einzubringen und weiterzuentwickeln.
+            Kontaktieren Sie mich gerne!
+        </p>
+
+        <div class="contact-actions">
+            <a
+                href="mailto:kkieutrangngy@gmail.com"
+                class="contact-btn primary">
+                E-Mail schreiben 
+            </a>
+            <a
+                href="https://www.linkedin.com/in/kieu-trang-nguyen2005/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-btn secondary">
+                LinkedIn 
+            </a>
+            <a
+                href="https://github.com/NguyenKieuTrang05"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-btn secondary">
+                GitHub 
+            </a>
         </div>
     </section>
+
     <footer>
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">Über mich</a></li>
-                    <li><a href="#experience">Erfahrung</a></li>
+                    <li><a href="#profile">Über mich</a></li>
+                    <li><a href="#education">Bildung</a></li>
                     <li><a href="#projects">Projekte</a></li>
+                    <li><a href="#skills">Skills & Sprachen</a></li>
+                    <li><a href="#experience">Erfahrung</a></li>
                     <li><a href="#certificate">Zertifikate</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
         </nav>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>

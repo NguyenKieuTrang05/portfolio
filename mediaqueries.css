@@ -1,4 +1,7 @@
-/* TABLET / KLEINERE DESKTOPS */
+/* ===================================
+   TABLET / KLEINERE DESKTOPS
+=================================== */
+
 @media screen and (max-width: 1200px) {
 
     #desktop-nav {
@@ -13,41 +16,63 @@
         margin: 0 2rem;
     }
 
-    .about-containers,
-    .experience-details-container,
-    .about-details-container {
-        flex-direction: column;
-    }
-
-    #projects .about-containers {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #projects .details-container {
-        flex: 1 1 auto;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .certificate-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .certificate-card {
-        width: 100%;
-        max-width: 350px;
-        box-sizing: border-box;
-    }
-
-    .title {
+    #education .title,
+    #projects .title,
+    #skills .title,
+    #experience .title,
+    #certificate .title,
+    #contact .title {
         font-size: 2.3rem;
     }
 }
 
+/* ===================================
+   HERO + PROJEKTE UMBRUCH
+=================================== */
 
-/* HANDY */
+@media screen and (max-width: 1000px) {
+
+    #profile {
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons,
+    .hero-socials {
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 260px;
+    }
+
+    /* Projekte untereinander statt nebeneinander */
+    .project-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-row.reverse .project-image,
+    .project-row.reverse .project-content {
+        order: 0;
+    }
+}
+
+/* ===================================
+   HANDY
+=================================== */
+
 @media screen and (max-width: 768px) {
 
     section {
@@ -56,57 +81,54 @@
     }
 
     #profile {
-        height: auto;
         min-height: 80vh;
-        padding-top: 3rem;
     }
 
-    .title {
+    #education .title,
+    #projects .title,
+    #skills .title,
+    #experience .title,
+    #certificate .title,
+    #contact .title {
         font-size: 2rem;
     }
 
-    .section__text__p2 {
-        font-size: 1.1rem;
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===================================
+   KLEINE HANDYS
+=================================== */
+
+@media screen and (max-width: 480px) {
+
+    .hero-title {
+        font-size: 2rem;
+        overflow-wrap: anywhere;
     }
 
-    .btn-container {
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+    .hero-buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
     }
 
-    .btn {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .details-container,
-    .text-container,
-    .certificate-card {
+    .hero-btn {
         width: 100%;
         box-sizing: border-box;
     }
 
-    #projects .project-img {
-        height: auto;
+    .hero-image {
+        max-width: 220px;
     }
 
-    .experience-sub-title {
-        font-size: 1.4rem;
-    }
-
-    .arrow {
-        display: none;
-    }
-
-    .contact-info-upper-container {
-        flex-direction: column;
-    }
-
-    .contact-info-container p {
-        font-size: 1rem;
-    }
-
-    .icon {
-        height: 1.8rem;
+    .language-list {
+        grid-template-columns: 1fr;
     }
 }
